@@ -1,0 +1,186 @@
+/*......................dashboard css........................*/
+.info-card {
+  margin-bottom: 20px;
+}
+
+.info-card .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--whiteColor);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  border-radius: 10px;
+  padding: 60px 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.info-card .col-lg-3.col-md-4.col-xs-6 {
+  margin-bottom: 20px;
+}
+
+.info-card .text-card p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 25px;
+}
+
+.info-card .text-card p:nth-child(1) {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 600;
+  color: var(--listMenuColor);
+  margin-bottom: 5px;
+}
+
+.info-card .text-card p:nth-child(2) {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--listMenuColor);
+  font-weight: 600;
+}
+
+.info-card .text-card p:nth-child(3) span:nth-child(1) {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.info-card .text-card p:nth-child(3) span:nth-child(2) a {
+  font-size: 10px;
+  margin-left: 8px;
+  text-decoration: none;
+  color: var(--infoCardDetails);
+  transition: all 0.3s ease;
+}
+
+.info-card .text-card p:nth-child(3) span:nth-child(2) a:hover {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+
+.info-card .icon-card p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--listMenuColor);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.info-card .icon-card p i {
+  font-size: 20px;
+  color: var(--whiteColor);
+}
+
+.info-card .card:hover {
+  transform: scale(1.02);
+}
+
+.info-card .card:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  z-index: -1;
+  transform: rotate(30deg);
+  left: -300;
+  transition: all 0.3s ease;
+}
+
+.info-card .card:hover:after {
+  left: -100px;
+}
+/* infocard 1 */
+.info-card .card-1 {
+  border-bottom: 5px solid var(--infoCard_1);
+}
+
+.info-card .card-1 .icon-card p {
+  background: var(--infoCard_1);
+}
+
+.info-card .card-1:after {
+  background: var(--infoCard_1_afterBackground);
+}
+
+.info-card .card-1 .text-card p:nth-child(3) span:nth-child(1) {
+  font-size: 10px;
+  background: var(--infoCard_1_up_Background);
+  color: var(--infoCard_1_up_Color);
+}
+/* infocard 2 */
+.info-card .card-2 {
+  border-bottom: 5px solid var(--infoCard_2);
+}
+
+.info-card .card-2 .icon-card p {
+  background: var(--infoCard_2);
+}
+
+.info-card .card-2:after {
+  background: var(--infoCard_2_afterBackground);
+}
+
+.info-card .card-2 .text-card p:nth-child(3) span:nth-child(1) {
+  font-size: 10px;
+  background: var(--infoCard_2_up_Background);
+  color: var(--infoCard_2_up_Color);
+}
+/* infocard 3 */
+.info-card .card-3 {
+  border-bottom: 5px solid var(--infoCard_3);
+}
+
+.info-card .card-3 .icon-card p {
+  background: var(--infoCard_3);
+}
+
+.info-card .card-3:after {
+  background: var(--infoCard_3_afterBackground);
+}
+
+.info-card .card-3 .text-card p:nth-child(3) span:nth-child(1) {
+  font-size: 10px;
+  background: var(--infoCard_3_up_Background);
+  color: var(--infoCard_3_up_Color);
+}
+/* infocard 4 */
+.info-card .card-4 {
+  border-bottom: 5px solid var(--infoCard_4);
+}
+
+.info-card .card-4 .icon-card p {
+  background: var(--infoCard_4);
+}
+
+.info-card .card-4:after {
+  background: var(--infoCard_4_afterBackground);
+}
+
+.info-card .card-4 .text-card p:nth-child(3) span:nth-child(1) {
+  font-size: 10px;
+  background: var(--infoCard_4_up_Background);
+  color: var(--infoCard_4_up_Color);
+}
+
+@media screen and (max-width: 1092px) {
+  .info-card .card {
+    padding: 60px 14px;
+  }
+
+  .info-card .text-card p {
+    display: flex;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .info-card .col-lg-3.col-md-4.col-xs-6 {
+    width: 100%;
+  }
+}
