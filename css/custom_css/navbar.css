@@ -106,6 +106,7 @@
 }
 .navbar .dropdown.profile .dropdown-menu {
   border: none;
+  background: var(--navBackground);
   padding-top: 0px;
   padding-bottom: 0px;
   margin-right: 0px;
@@ -123,8 +124,8 @@
   top: 0;
   right: -3px;
   box-sizing: border-box;
-  border: 5px solid var(--whiteColor);
-  border-color: transparent transparent var(--whiteColor) var(--whiteColor);
+  border: 5px solid var(--navBackground);
+  border-color: transparent transparent var(--navBackground) var(--navBackground);
   transform-origin: 0 0;
   transform: rotate(135deg);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px 0px;
@@ -141,7 +142,7 @@
   right: -3px;
   box-sizing: border-box;
   border: 5px solid black;
-  border-color: transparent transparent var(--whiteColor) var(--whiteColor);
+  border-color: transparent transparent var(--navBackground) var(--navBackground);
   transform-origin: 0 0;
   transform: rotate(135deg);
 }
