@@ -15,6 +15,7 @@ html {
 :root {
   --whiteColor: #fff;
   --blackColor: #000;
+  --opacityColor:  #656565;
   --navBackground: #f5f5f5;
   --commonColor: #4e73df;
   --demoColor:#5e79c9;
@@ -24,7 +25,9 @@ html {
   --iconColor: #b0b7c3;
   --listMenuColor: #382f2f;
   --infoCardDetails: #403737;
-
+  --commonBoxShadow:0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  --inputBoxShadow: 0px 0px 22px -15px rgba(56,99,217,1);
+ 
   --infoCard_1: #ff579a;
   --infoCard_1_afterBackground: rgba(255, 87, 154, 0.06);
   --infoCard_1_up_Background: rgba(255, 87, 154, 0.09);

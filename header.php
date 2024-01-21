@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="inter_fonts/interfont.css" />
     <link rel="stylesheet" href="css/custom_css/root.css" />
     <link rel="stylesheet" href="css/custom_css/navbar.css" />
-    <link rel="stylesheet" href="css/custom_css/dashboard.css" />
+    <link rel="stylesheet" href="css/custom_css/style.css" />
   </head>
   <style>
     img {
@@ -162,7 +162,7 @@
                   <div class="expand_caret caret"></div>
                 </a>
                 <ul class="sub-menu collapse" id="payment">
-                  <li>
+                <li>
                     <a
                       href="/add_book.html"
                       class="submenu-link"
@@ -256,6 +256,47 @@
                   <li>
                     <a href="#" class="submenu-link" id="submenu-item-2-3"
                       ><i class="fas fa-angle-double-right"></i> Bigest Das</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                data-toggle="collapse"
+                data-target="#meta_data"
+                class="collapsed nav-parent main-dropdown-menu"
+                aria-expanded="false"
+              >
+                <a href="#" class="side-menu-items" id="main-menu-item-meta-data">
+                  <span class="icon-for-menu">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span id="main-menu-list" class="main-menu-list"
+                    >Meta Data module</span
+                  >
+                  <div class="expand_caret caret"></div>
+                </a>
+                <ul class="sub-menu collapse" id="meta_data">
+                  <li>
+                    <a href="add_metadata_nmc.php" class="submenu-link" id="submenu-item-meta-data_nmc"
+                      ><i class="fas fa-angle-double-right"></i> Add Meta Data (NMC)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="add_metadata_mc.php"
+                      class="submenu-link"
+                      id="submenu-item-meta-data_mc"
+                      ><i class="fas fa-angle-double-right"></i> Add Meta Data (MC)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="view_meta_data.php" class="submenu-link" id="submenu-item-view-meta-data"
+                      ><i class="fas fa-angle-double-right"></i> View Meta data</a
+                    >
+                  </li>
+                  <li>
+                    <a href="master_view.php" class="submenu-link" id="submenu-item-master-view"
+                      ><i class="fas fa-angle-double-right"></i> Master View (Admin)</a
                     >
                   </li>
                 </ul>

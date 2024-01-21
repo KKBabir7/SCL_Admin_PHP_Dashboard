@@ -369,7 +369,7 @@
 .nav-side-menu .nav-parent .sub-menu {
   margin-top: 1px;
   margin-bottom: 1px;
-  padding: 0px 18px;
+  padding: 0px 10px;
   transition: all 0.5s ease;
 }
 .nav-side-menu .nav-parent .sub-menu li {
