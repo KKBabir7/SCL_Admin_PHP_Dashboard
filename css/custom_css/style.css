@@ -1,4 +1,4 @@
-/*......................dashboard css........................*/
+/*......................dashboard info card css........................*/
 .info-card {
   margin-bottom: 20px;
 }
@@ -172,19 +172,14 @@
   color: var(--infoCard_4_up_Color);
 }
 
-
-
-
-
-
-
-/* meta data css */
-
+/*......................meta data css........................*/
 .jumbotron.meta-data-nmc {
   padding-left: 0px;
   margin-top: 45px;
   position: relative;
 }
+
+
 
 .meta-data-nmc::before {
   content: "";
@@ -199,27 +194,38 @@
   height: 100px;
   border-radius: 10px;
 }
+.jumbotron.meta-data-nmc-second{
+  margin-top: -19px;
+}
+.meta-data-nmc-second::before {
+  top: -10px;
+  opacity: 1;
+  height: 10px;
+  border-radius: 10px;
+}
 
-.meta-data-nmc .form-wrap {
+/* first form */
+.meta-data-nmc-form {
   background: rgba(255, 255, 255, 1);
   width: 100%;
-  /* max-width: 850px; */
+
   padding-bottom: 8px !important;
   padding: 50px;
   margin: 0 auto;
   position: relative;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  /* -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px; */
   border-radius: 10px;
   box-shadow: var(--commonBoxShadow);
   z-index: 22;
 }
 
-.meta-data-nmc .form-group {
+.meta-data-nmc-form .form-group {
   margin-bottom: 25px;
 }
 
-.meta-data-nmc .form-group>label {
+.meta-data-nmc-form .form-group > label {
   display: block;
   font-size: 13px;
   color: var(--opacityColor);
@@ -227,12 +233,12 @@
   text-transform: capitalize;
 }
 
-.meta-data-nmc .custom-control-label {
+.meta-data-nmc-form .custom-control-label {
   color: #000;
   font-size: 14px;
 }
 
-.meta-data-nmc .form-group .form-control {
+.meta-data-nmc-form .form-group .form-control {
   height: 40px;
   background: var(--navBackground);
   border-color: transparent;
@@ -243,39 +249,38 @@
   outline: none;
   box-shadow: 0px 0px 22px -15px rgba(56, 99, 217, 0);
 }
-
-.meta-data-nmc .form-group .form-control::placeholder {
+.meta-data-nmc-form .form-group .form-control.textareaControl{
+  height: auto !important;
+  padding-top: 10px !important;
+  padding-bottom: 5px !important;
+}
+.meta-data-nmc-form .form-group .form-control::placeholder {
   color: var(--opacityColor);
 }
 
-.meta-data-nmc .form-group .form-control:focus,
-.meta-data-nmc .form-group .form-control:active {
+.meta-data-nmc-form .form-group .form-control:focus,
+.meta-data-nmc-form .form-group .form-control:active {
   border-color: #4e72df83;
   box-shadow: var(--inputBoxShadow);
-
 }
 
-.meta-data-nmc textarea.form-control {
+.meta-data-nmc-formc textarea.form-control {
   height: 160px;
   padding-top: 15px;
   resize: none;
 }
 
-
-.meta-data-nmc .select-wrap {}
-
-
-.meta-data-nmc .custom-select {
+/* custom select */
+.custom-select {
   position: relative;
   font-family: Arial;
 }
 
-.meta-data-nmc .custom-select select {
+.custom-select select {
   display: none;
-  /*hide original SELECT element:*/
 }
 
-.meta-data-nmc .select-selected {
+.custom-select .select-selected {
   height: 40px;
   background: var(--navBackground);
   border-color: transparent;
@@ -287,15 +292,14 @@
   box-shadow: 0px 0px 22px -15px rgba(56, 99, 217, 0);
 }
 
-.meta-data-nmc .select-selected:focus,
-.meta-data-nmc .select-selected:hover,
-.meta-data-nmc .select-selected.active {
+.custom-select .select-selected:focus,
+.custom-select .select-selected:hover,
+.custom-select .select-selected.active {
   border-color: #4e72df83;
   box-shadow: var(--inputBoxShadow);
 }
 
-/*style the arrow inside the select element:*/
-.meta-data-nmc .select-selected:after {
+.custom-select .select-selected:after {
   position: absolute;
   content: "";
   top: 18px;
@@ -303,30 +307,27 @@
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: var(--commonColor)transparent transparent transparent;
+  border-color: var(--commonColor) transparent transparent transparent;
   transition: all 0.3s ease;
 }
 
-/*point the arrow upwards when the select box is open (active):*/
-.meta-data-nmc .select-selected.select-arrow-active:after {
+.custom-select .select-selected.select-arrow-active:after {
   border-color: transparent transparent var(--commonColor) transparent;
   top: 10px;
   transition: all 0.3s ease;
 }
 
-/*style the items (options), including the selected item:*/
-.meta-data-nmc .select-items div,
-.select-selected {
+.custom-select .select-items div,
+.custom-select .select-selected {
   color: var(--opacityColor);
-  padding: 5px 16px;
+  padding: 10px 16px;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(100, 100, 100, 0.1) transparent;
   cursor: pointer;
   user-select: none;
 }
 
-/*style items (options):*/
-.meta-data-nmc .select-items {
+.custom-select .select-items {
   position: absolute;
   background-color: var(--navBackground);
   top: 100%;
@@ -335,43 +336,52 @@
   z-index: 99;
 }
 
-/*hide the items when the select box is closed:*/
-.meta-data-nmc .select-hide {
+.custom-select .select-hide {
   display: none;
 }
 
-.meta-data-nmc .select-items div:hover,
-.meta-data-nmc .same-as-selected {
+.custom-select .select-items div:hover,
+.custom-select .same-as-selected {
   background-color: rgba(100, 100, 100, 0.1);
 }
-.custom-select:focus{
-  background: red;
-}
-.select-selected.select-arrow-active{
+
+.custom-select .select-selected.select-arrow-active {
   border-color: #4e72df83;
   box-shadow: var(--inputBoxShadow);
-
 }
 
+/*matching radio and calculate custom css */
+.subbtnandmatching {
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* calculate css */
+.meta-data-nmc-form .my-btn-claculate {
+  color: #fff;
+  background-color: var(--commonColor);
+  border-color: var(--commonColor);
+  outline: none !important;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 14px;
+  width: 300px;
+}
 
+.meta-data-nmc-form .my-btn-claculate:hover,
+.meta-data-nmc-form .my-btn-claculate:focus {
+  color: var(--commonColor);
+  background-color: #ffffff;
+  border-color: var(--commonColor);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*matching radio custom css */
 .matchingnotmatching {
   display: flex;
   gap: 10px;
   margin-top: 10px;
-
 }
 
 .matchingnotmatching .custom-control.custom-radio label {
@@ -379,9 +389,6 @@
   font-weight: 500;
   color: var(--opacityColor);
 }
-
-
-
 
 .matchingnotmatching .option-input {
   -webkit-appearance: none;
@@ -434,8 +441,8 @@
   -webkit-animation: click-wave 0.25s;
   -moz-animation: click-wave 0.25s;
   animation: click-wave 0.25s;
-  background: #E91E63;
-  content: '';
+  background: #e91e63;
+  content: "";
   display: block;
   position: relative;
   z-index: 100;
@@ -449,79 +456,89 @@
   border-radius: 50%;
 }
 
+/* meta data-nmc customar  modal message  */
 
-
-
-
-
-
-
-.meta-data-nmc .my-btn {
-  color: #fff;
-  background-color: var(--commonColor);
-  border-color: var(--commonColor);
-  outline: none !important;
-  box-shadow: none;
-  font-weight: 500;
-  font-size: 14px;
-  width: 300px;
-
+.metaData-nmc-modal-message {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 70;
+  right: -350px;
+  background: rgb(255,255,255);
+  background: linear-gradient(68deg, rgba(255,255,255,1) 24%, rgba(243,246,240,1) 38%, rgba(254,255,253,1) 61%, rgba(244,249,239,1) 61%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+  z-index: 60;
+  padding-bottom: 70px;
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  box-shadow: var(--commonBoxShadow);
 }
-
-.meta-data-nmc .subbtnandmatching {
-  display: flex;
-  flex: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.meta-data-nmc .my-btn:hover,
-.meta-data-nmc .my-btn:focus {
-  color: var(--commonColor);
-  background-color: #ffffff;
-  border-color: var(--commonColor);
-
+.metaData-nmc-modal-message::-webkit-scrollbar {
+  display: none;
 }
 
 
-.modalMessage {
-  height: 200px;
+
+.metaData-nmc-modal-message .closebtn {
   position: relative;
-  overflow: hidden;
+  font-size: 25px;
+  margin-left: 0;
+  padding: 2px 2px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 30px;
 }
+.metaData-nmc-modal-message .closebtn i{
+   transition: all 0.3s ease;
+}
+.metaData-nmc-modal-message .closebtn:hover i{
+  color: rgb(239, 131, 131);
+} 
 
-.card {
-  background: rgb(73,242,139);
-  background: linear-gradient(68deg, rgba(73,242,139,1) 0%, rgba(57,223,121,1) 0%, rgba(27,234,107,1) 0%, rgba(34,227,108,1) 0%, rgba(31,237,110,1) 0%, rgba(74,228,134,1) 0%, rgba(78,223,134,1) 0%, rgba(20,242,106,1) 0%, rgba(10,224,93,1) 0%, rgba(97,213,142,1) 45%, rgba(75,205,126,1) 62%, rgba(78,185,120,1) 97%, rgba(78,185,120,1) 100%, rgba(91,226,144,1) 100%, rgba(114,228,158,1) 100%);
+
+.metaData-nmc-modal-message .card {
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 100%;
   text-align: left;
-
+  margin-top: 0px;
 }
 
-.card h2 {
+.metaData-nmc-modal-message .card h2 {
   color: #333;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 800;
 }
-
-.card p {
-  color: #666;
+.metaData-nmc-modal-message .card h2 i{
+  font-size: 17px;
+}
+.metaData-nmc-modal-message .card p strong{
+  font-size: 12px;
+  color: #474747;
+}
+.metaData-nmc-modal-message .card p {
+  color: #878787;
   margin-bottom: 8px;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.status-active {
+.metaData-nmc-modal-message .status-active {
   color: green;
   font-weight: bold;
 }
 
 
 
-
+.mainformmenu{
+  display: none;
+}
 @media screen and (max-width: 1092px) {
   .info-card .card {
     padding: 60px 14px;

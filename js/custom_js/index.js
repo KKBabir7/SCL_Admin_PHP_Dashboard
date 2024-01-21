@@ -229,7 +229,16 @@ customselectoption()
 
 
 
-
+    function openNmcData() {
+      document.getElementById("nmcModalMessage").style.right = "0px";
+      if( document.getElementById("nmcModalMessage").style.right == "0px"){
+         document.getElementById("mainformmenu").style.display="block"
+      }
+     
+    }
+    function closeNmcData() {
+      document.getElementById("nmcModalMessage").style.right = "-350px";
+    }
 
 
 

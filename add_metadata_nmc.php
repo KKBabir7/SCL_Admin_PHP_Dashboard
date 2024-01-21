@@ -7,20 +7,20 @@
     <div class="row">
         <div class="col-md-12">
             <div class="jumbotron meta-data-nmc" style="padding:0px !important">
-                <div class="form-wrap">	
-                   <form id="meta-data-nmc-form">
+                <div class="form-wrap meta-data-nmc-form">	
+                   <form id="meta-data-nmc-form" id="firstFormNmc">
                        <div class="row">
                             <div class="col-md-6">
                             <div class="form-group">
-                                <label id="name-label" for="name">Connection Code</label>
-                                <input type="text" readonly name="name" id="name" placeholder="01" class="form-control" required>
+                                <label id="connection" for="name">Connection Code</label>
+                                <input type="text" readonly name="connection" id="connection" placeholder="01" class="form-control" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                            <div class="form-group">
                                 <label>Area Code</label>
                                 <div class="custom-select" style="width:100%">
-                                    <select id="dropdown" name="role" class="form-control" autofocus required>
+                                    <select id="areacode" name="role" class="form-control" autofocus required>
                                         <option value="0">Area Code</option>
                                         <option value="102">102</option>
                                         <option value="104">104</option>
@@ -38,36 +38,35 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label id="number-label" for="number">Customer code</label>
-                                <input type="text" name="age" id="customercode"  class="form-control" placeholder="Customer code" >
+                                <label id="customer" for="number">Customer code</label>
+                                <input type="text" name="customer" id="customercode"  class="form-control" placeholder="Customer code" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label id="fixeddigitr" for="email">Fixed digit</label>
-                                <input type="text" name="fixeddigitr" id="fixeddigitr" placeholder="01" class="form-control" readonly>
+                                <label id="fixeddigit" for="email">Fixed digit</label>
+                                <input type="text" name="fixeddigit" id="fixeddigit" placeholder="01" class="form-control" readonly>
                             </div>
                         </div>
                     </div>
                     <div class="row subbtnandmatching">
                         <div>
-                            <button type="submit" id="submit" class="btn my-btn btn-primary btn-block">Calculate</button>
+                            <button   onclick="openNmcData()" type="button" id="calculate" class="btn my-btn-claculate btn-primary btn-block">Calculate</button>
                         </div>
                         <div>
                             <div class="form-group matchingnotmatching" >
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <label>
-                                        <input type="radio" class="option-input radio" name="example"  />
+                                        <input type="radio" class="option-input radio" name="matching"  />
                                        Matching
                                     </label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
                                    <label>
-                                        <input type="radio" class="option-input radio" name="example"  />
+                                        <input type="radio" class="option-input radio" name="nomatching"  />
                                         Not Matching
                                     </label>
                                 </div>
@@ -76,16 +75,58 @@
                     </div>
                 </form>
                </div>	
-               <div class="modalMessage">
-                <div class="card">
-                    <h2>Client Information</h2>
-                    <p><strong>Client ID:</strong> 13 digit client id 0110200001016 succesfully generated and matched with Titas Database</p>
-                    <p><strong>Customer Code:</strong> 0110200001016</p>
-                    <p><strong>Address:</strong> D. M.C- 133 WEST NAKHAL PARA, DHAKA.</p>
-                    <p><strong>Name:</strong> AMINUL ISLAM</p>
-                    <p><strong>Status:</strong> <span class="status-active">ACTIVE</span></p>
+               <div class="metaData-nmc-modal-message" id="nmcModalMessage">
+                    <div class="card">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNmcData()"><i class="fas fa-times-circle"></i></a>
+                        <h2><i class="fas fa-user-tie"></i> Client Information: </h2>
+                        <p><strong>Client ID:</strong> 13 digit client id 0110200001016 succesfully generated and matched with Titas Database</p>
+                        <p><strong>Customer Code:</strong> 0110200001016</p>
+                        <p><strong>Address:</strong> D. M.C- 133 WEST NAKHAL PARA, DHAKA.</p>
+                        <p><strong>Name:</strong> AMINUL ISLAM</p>
+                        <p><strong>Status:</strong> <span class="status-active"><i class="fas fa-check-circle"></i> ACTIVE</span></p>
+                       
+                    </div>
                 </div>
-             </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mainformmenu" id="mainformmenu">
+        <div class="col-md-12">
+            <div class="jumbotron meta-data-nmc meta-data-nmc-second" style="padding:0px !important">
+                <div class="form-wrap meta-data-nmc-form">	
+                   <form id="meta-data-nmc-form" id="submitFormNmc">
+                       <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label id="name" for="name">Name</label>
+                                    <input type="text"  name="name" id="name" placeholder="Name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label id="uniqecode" for="number">Code</label>
+                                    <input type="text" name="uniqecode" id="uniqecode"  class="form-control" placeholder="0110200000116" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label id="totalpage" for="totalpage">Total Page</label>
+                                    <input type="text" name="totalpage" id="totalPage"  class="form-control" placeholder="Total Page" >
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="form-group">
+                                    <label id="address" for="address">Address</label>
+                                    <textarea class="form-control textareaControl" rows="10" placeholder="Address" ></textarea>
+                                </div>
+                           
+                            </div>
+                       </div>
+                       <div class="row subbtnandmatching">
+                        <div>
+                            <button type="submit" id="submit" class="btn my-btn-claculate btn-primary btn-block">Submit</button>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+               </div>	
+
             </div>
         </div>
     </div>
