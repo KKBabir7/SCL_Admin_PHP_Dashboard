@@ -1,4 +1,4 @@
-<?php include_once './header.php';?>
+<?php include('includes/header.php'); ?>
     <div class="row">
         <div class="col-md-12">
         <h3>Meta Data Entry</h3>
@@ -60,13 +60,13 @@
                             <div class="form-group matchingnotmatching" >
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <label>
-                                        <input type="radio" class="option-input radio" name="matching"  />
+                                        <input type="radio" class="option-input radio" name="matched_with_titas_db"  />
                                        Matching
                                     </label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
                                    <label>
-                                        <input type="radio" class="option-input radio" name="nomatching"  />
+                                        <input type="radio" class="option-input radio" name="matched_with_titas_db"  />
                                         Not Matching
                                     </label>
                                 </div>
@@ -130,4 +130,4 @@
             </div>
         </div>
     </div>
-<?php include_once './footer.php';?>
+<?php include('includes/footer.php'); ?>

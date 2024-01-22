@@ -141,7 +141,7 @@
   top: 0;
   right: -3px;
   box-sizing: border-box;
-  border: 5px solid black;
+  border: 5px solid var(--navBackground);
   border-color: transparent transparent var(--navBackground) var(--navBackground);
   transform-origin: 0 0;
   transform: rotate(135deg);
@@ -524,7 +524,7 @@
   }
   .navbar .dropdown.profile .dropdown-menu {
     position: absolute;
-    background: var(--whiteColor);
+    background: var(--navBackground);
     margin-left: 10px;
     margin-top: -3px;
   }

@@ -11,14 +11,15 @@
     />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>index</title>
-    <link rel="icon" href="img/logo/logo.jpeg" type="image/png" sizes="16x16" />
+    <link rel="icon" href="assest/img/logo/logo.jpeg" type="image/png" sizes="16x16" />
 
-    <link href="fonts/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css" />
-    <link rel="stylesheet" href="inter_fonts/interfont.css" />
-    <link rel="stylesheet" href="css/custom_css/root.css" />
-    <link rel="stylesheet" href="css/custom_css/navbar.css" />
+    <link href="assest/fonts/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assest/css/bootstrap_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assest/css/bootstrap_css/bootstrap.css" />
+    <link rel="stylesheet" href="assest/inter_fonts/interfont.css" />
+    <link rel="stylesheet" href="assest/css/custom_css/root.css" />
+    <link rel="stylesheet" href="assest/css/custom_css/navbar.css" />
+    <link rel="stylesheet" href="assest/css/custom_css/style.css" />
   </head>
   <style>
     img {
@@ -79,7 +80,7 @@
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  ><img src="img/profile/iprofile.webp" /><i
+                  ><img src="assest/img/profile/iprofile.webp" /><i
                     class="fas fa-sort-down down-icon"
                   ></i
                 ></a>
@@ -117,7 +118,7 @@
             <p class="sidebar-logo">
               <span
                 ><img
-                  src="img/logo/logo.jpeg"
+                  src="assest/img/logo/logo.jpeg"
                   width="30px"
                   height="30px"
                   style="border-radius: 100px"
@@ -133,7 +134,7 @@
             <ul class="nav-side-menu" id="menu">
               <li class="nav-parent">
                 <a
-                  href="index.html"
+                  href="index.php"
                   class="side-menu-items maindhasboard active-link-as"
                   id="main-menu-item-1"
                 >
@@ -161,9 +162,9 @@
                   <div class="expand_caret caret"></div>
                 </a>
                 <ul class="sub-menu collapse" id="payment">
-                  <li>
+                <li>
                     <a
-                      href="/add_book.html"
+                      href="add_book.php"
                       class="submenu-link"
                       id="submenu-item-1-2"
                       ><i class="fas fa-angle-double-right"></i> Add Register
@@ -195,13 +196,13 @@
                 </a>
                 <ul class="sub-menu collapse" id="project_management">
                   <li>
-                    <a href="#" class="submenu-link" id="submenu-item-1-6"
+                    <a href="projects.php" class="submenu-link" id="submenu-item-1-6"
                       ><i class="fas fa-angle-double-right"></i> Projects</a
                     >
                   </li>
                   <li>
                     <a
-                      href="/add_project.html"
+                      href="add_project.php"
                       class="submenu-link"
                       id="submenu-item-1-7"
                       ><i class="fas fa-angle-double-right"></i> Add Project</a
@@ -255,6 +256,47 @@
                   <li>
                     <a href="#" class="submenu-link" id="submenu-item-2-3"
                       ><i class="fas fa-angle-double-right"></i> Bigest Das</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                data-toggle="collapse"
+                data-target="#meta_data"
+                class="collapsed nav-parent main-dropdown-menu"
+                aria-expanded="false"
+              >
+                <a href="#" class="side-menu-items" id="main-menu-item-meta-data">
+                  <span class="icon-for-menu">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span id="main-menu-list" class="main-menu-list"
+                    >Meta Data module</span
+                  >
+                  <div class="expand_caret caret"></div>
+                </a>
+                <ul class="sub-menu collapse" id="meta_data">
+                  <li>
+                    <a href="add_metadata_nmc.php" class="submenu-link" id="submenu-item-meta-data_nmc"
+                      ><i class="fas fa-angle-double-right"></i> Add Meta Data (NMC)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="add_metadata_mc.php"
+                      class="submenu-link"
+                      id="submenu-item-meta-data_mc"
+                      ><i class="fas fa-angle-double-right"></i> Add Meta Data (MC)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="view_meta_data.php" class="submenu-link" id="submenu-item-view-meta-data"
+                      ><i class="fas fa-angle-double-right"></i> View Meta data</a
+                    >
+                  </li>
+                  <li>
+                    <a href="master_view.php" class="submenu-link" id="submenu-item-master-view"
+                      ><i class="fas fa-angle-double-right"></i> Master View (Admin)</a
                     >
                   </li>
                 </ul>
@@ -360,32 +402,3 @@
       <!-- Page Content -->
       <div class="page-content-wrapper">
         <div class="container-fluid xyz">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>Add Book</h3>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-lg-12">
-              <h2>This is Add Project</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-          </div>
-          <br />
-
-          <br />
- 
-        </div>
-        <!-- /#page-content-wrapper -->
-      </div>
-    </div>
-
-    <script src="js/bootstrap_js/bootstrap.js"></script>
-    <script src="js/custom_js/jquery.min.js"></script>
-    <script src="js/bootstrap_js/bootstrap.min.js"></script>
-    <script src="js/custom_js/index.js"></script>
-    <script src="js/custom_js/chart.js"></script>
-    <script src="js/custom_js/chart.custom.js"></script>
-    
-  </body>
-</html>
