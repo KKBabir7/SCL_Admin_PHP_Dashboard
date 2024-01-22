@@ -11,15 +11,15 @@
     />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>index</title>
-    <link rel="icon" href="assest/img/logo/logo.jpeg" type="image/png" sizes="16x16" />
+    <link rel="icon" href="asset/img/logo/logo.jpeg" type="image/png" sizes="16x16" />
 
-    <link href="assest/fonts/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assest/css/bootstrap_css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assest/css/bootstrap_css/bootstrap.css" />
-    <link rel="stylesheet" href="assest/inter_fonts/interfont.css" />
-    <link rel="stylesheet" href="assest/css/custom_css/root.css" />
-    <link rel="stylesheet" href="assest/css/custom_css/navbar.css" />
-    <link rel="stylesheet" href="assest/css/custom_css/style.css" />
+    <link href="asset/fonts/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/bootstrap_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/bootstrap_css/bootstrap.css" />
+    <link rel="stylesheet" href="asset/inter_fonts/interfont.css" />
+    <link rel="stylesheet" href="asset/css/custom_css/root.css" />
+    <link rel="stylesheet" href="asset/css/custom_css/navbar.css" />
+    <link rel="stylesheet" href="asset/css/custom_css/style.css" />
   </head>
   <style>
     img {
@@ -80,7 +80,7 @@
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  ><img src="assest/img/profile/iprofile.webp" /><i
+                  ><img src="asset/img/profile/iprofile.webp" /><i
                     class="fas fa-sort-down down-icon"
                   ></i
                 ></a>
@@ -118,7 +118,7 @@
             <p class="sidebar-logo">
               <span
                 ><img
-                  src="assest/img/logo/logo.jpeg"
+                  src="asset/img/logo/logo.jpeg"
                   width="30px"
                   height="30px"
                   style="border-radius: 100px"
